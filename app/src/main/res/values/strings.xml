@@ -4,21 +4,30 @@
     <string name="navigation_drawer_close">Закрыть меню</string>
     <string name="action_settings">Settings</string>
 
+    <!-- App navigation -->
+
     <string name="menu_section_map">Карта</string>
 
-    <string name="menu_home">Все новости</string>
+        <string name="menu_home">Все новости</string>
 
     <string name="menu_section_my_account">Аккаунт</string>
 
-    <string name="menu_my_account">Мой аккаунт</string>
-    <string name="menu_followers">Мои читатели</string>
-    <string name="menu_following">Мои подписки</string>
+        <string name="menu_my_account">Мой аккаунт</string>
+        <string name="menu_followers">Мои читатели</string>
+        <string name="menu_following">Мои подписки</string>
 
-    <string name="menu_login">Вход</string>
-    <string name="menu_register">Регистрация</string>
+        <string name="menu_login">Вход</string>
+        <string name="menu_register">Регистрация</string>
 
     <string name="menu_section_application">Приложение</string>
 
-    <string name="menu_settings">Настройки</string>
-    <string name="menu_about">О приложении</string>
+        <string name="menu_settings">Настройки</string>
+        <string name="menu_about">О приложении</string>
+
+    <!-- Login -->
+
+    <string name="login_email">E-mail</string>
+    <string name="login_password">Пароль</string>
+    <string name="login_action">Войти</string>
+
 </resources>
