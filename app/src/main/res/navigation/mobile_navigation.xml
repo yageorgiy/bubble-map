@@ -12,32 +12,45 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.yageorgiy.bubblemap.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_my_account"
+        android:name="com.yageorgiy.bubblemap.ui.myaccount.MyAccountFragment"
+        android:label="@string/menu_my_account"
+        tools:layout="@layout/my_account_fragment" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.yageorgiy.bubblemap.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_following"
+        android:name="com.yageorgiy.bubblemap.ui.following.FollowingFragment"
+        android:label="@string/menu_following"
+        tools:layout="@layout/following_fragment" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.yageorgiy.bubblemap.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_followers"
+        android:name="com.yageorgiy.bubblemap.ui.followers.FollowersFragment"
+        android:label="@string/menu_followers"
+        tools:layout="@layout/followers_fragment" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.yageorgiy.bubblemap.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_login"
+        android:name="com.yageorgiy.bubblemap.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/login_fragment" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.yageorgiy.bubblemap.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_register"
+        android:name="com.yageorgiy.bubblemap.ui.register.RegisterFragment"
+        android:label="@string/menu_register"
+        tools:layout="@layout/register_fragment" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.yageorgiy.bubblemap.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/register_fragment" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.yageorgiy.bubblemap.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/about_fragment" />
+
 </navigation>
