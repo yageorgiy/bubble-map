@@ -1,0 +1,10 @@
+query GetRandomMapNodes{
+    mapNodes{
+        id,
+        user_id,
+        date_created,
+        title,
+        description,
+        thumbnail_url
+    }
+}

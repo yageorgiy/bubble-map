@@ -16,7 +16,7 @@
         android:name="com.yageorgiy.bubblemap.ui.myaccount.MyAccountFragment"
         android:label="@string/menu_my_account"
         tools:layout="@layout/my_account_fragment" />
-
+<!--
     <fragment
         android:id="@+id/nav_following"
         android:name="com.yageorgiy.bubblemap.ui.following.FollowingFragment"
@@ -28,6 +28,18 @@
         android:name="com.yageorgiy.bubblemap.ui.followers.FollowersFragment"
         android:label="@string/menu_followers"
         tools:layout="@layout/followers_fragment" />
+-->
+    <fragment
+        android:id="@+id/nav_publish_post"
+        android:name="com.yageorgiy.bubblemap.ui.publishpost.PublishPostFragment"
+        android:label="@string/menu_publish_post"
+        tools:layout="@layout/publish_post_fragment" />
+
+    <fragment
+        android:id="@+id/nav_view_post"
+        android:name="com.yageorgiy.bubblemap.ui.viewpost.ViewPostFragment"
+        android:label="@string/view_post_title"
+        tools:layout="@layout/view_post_fragment" />
 
     <fragment
         android:id="@+id/nav_login"
@@ -45,7 +57,7 @@
         android:id="@+id/nav_settings"
         android:name="com.yageorgiy.bubblemap.ui.settings.SettingsFragment"
         android:label="@string/menu_settings"
-        tools:layout="@layout/register_fragment" />
+        tools:layout="@layout/settings_fragment" />
 
     <fragment
         android:id="@+id/nav_about"

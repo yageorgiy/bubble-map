@@ -1,0 +1,10 @@
+mutation EditPost($id: Int!, $title: String, $tag: PostTag, $content: Html){
+
+    editPost(
+        id: $id,
+        title: $title,
+        tag: $tag,
+        content: $content
+    )
+
+}

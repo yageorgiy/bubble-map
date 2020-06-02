@@ -1,0 +1,13 @@
+query GetPostInfo($id: Int!){
+    mapNode(id: $id){
+        id,
+        user_id,
+        date_created,
+        title,
+        description,
+        thumbnail_url,
+        getAuthor{
+            username
+        }
+    }
+}

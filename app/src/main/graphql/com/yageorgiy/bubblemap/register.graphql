@@ -1,0 +1,15 @@
+mutation RegisterMutation($username: String!, $email: Email!, $password: Password!, $sex: Sex!){
+
+    register(
+        username: $username,
+        email: $email,
+        password: $password,
+        sex: $sex
+    )
+
+    login(
+        username: $username,
+        password: $password
+    )
+
+}

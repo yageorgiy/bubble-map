@@ -1,0 +1,6 @@
+query GetViewerInfoForSidebar{
+    viewer{
+        username,
+        email
+    }
+}

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/publish_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.publishpost.PublishPostFragment"
+    android:orientation="horizontal">
+
+
+    <ScrollView
+        android:id="@+id/publish_post_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/publish_post_bottom_panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/publish_post_scroll_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/publish_post_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/publish_post_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <EditText
+                android:id="@+id/publish_post_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/publish_post_title_placeholder"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/publish_post_tag_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/publish_post_tag"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <Spinner
+                android:id="@+id/publish_post_tag_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/publish_post_tags" />
+
+            <TextView
+                android:id="@+id/publish_post_image_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/publish_post_image"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/publish_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Выбрать"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/publish_post_editor_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/publish_post_editor_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <com.github.irshulx.Editor
+                android:id="@+id/publish_post_editor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="100dp"
+                android:visibility="visible"
+                app:placeholder="Был прекрасный день..."
+                app:render_type="Editor">
+
+            </com.github.irshulx.Editor>
+
+            <TextView
+                android:id="@+id/publish_post_error_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/red" />
+
+            <Button
+                android:id="@+id/publish_post_action_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/publish_post_action_text" />
+        </LinearLayout>
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/publish_post_bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/publish_post_bottom_panel_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/publish_post_button_bold"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_format_bold_24" />
+
+            <Button
+                android:id="@+id/publish_post_button_italic"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_format_italic_24" />
+
+            <Button
+                android:id="@+id/publish_post_button_link"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_insert_link_24" />
+
+            <Button
+                android:id="@+id/publish_post_button_line_divider"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_minimize_24" />
+
+            <Button
+                android:id="@+id/publish_post_button_h1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_filter_1_24" />
+
+            <Button
+                android:id="@+id/publish_post_button_h2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_filter_2_24" />
+
+            <Button
+                android:id="@+id/publish_post_button_h3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_filter_3_24" />
+
+            <Button
+                android:id="@+id/publish_post_button_intent"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_format_indent_increase_24" />
+
+            <Button
+                android:id="@+id/publish_post_button_outdent"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_format_indent_decrease_24" />
+
+            <Button
+                android:id="@+id/publish_post_button_blockquote"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_format_quote_24" />
+
+            <Button
+                android:id="@+id/publish_post_button_color"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_color_lens_24"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/publish_post_button_numeric_list"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_format_list_numbered_24" />
+
+            <Button
+                android:id="@+id/publish_post_button_bulleted_list"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_format_list_bulleted_24"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/publish_post_button_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_baseline_image_24"
+                android:visibility="gone" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

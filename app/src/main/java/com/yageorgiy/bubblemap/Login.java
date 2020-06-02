@@ -4,9 +4,12 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.apollographql.apollo.ApolloClient;
 import com.yageorgiy.bubblemap.ui.login.LoginFragment;
 
 public class Login extends AppCompatActivity {
+
+    public ApolloClient apolloClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,5 +20,6 @@ public class Login extends AppCompatActivity {
                     .replace(R.id.container, LoginFragment.newInstance())
                     .commitNow();
         }
+
     }
 }

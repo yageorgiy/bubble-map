@@ -1,0 +1,9 @@
+mutation PublishPost($title: String!, $tag: PostTag!, $content: Html!){
+
+    publishPost(
+        title: $title,
+        tag: $tag,
+        content: $content
+    )
+
+}

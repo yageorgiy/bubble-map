@@ -1,0 +1,8 @@
+mutation LoginQuery($username: String!, $password: Password!){
+
+    login(
+        username: $username,
+        password: $password
+    )
+
+}
